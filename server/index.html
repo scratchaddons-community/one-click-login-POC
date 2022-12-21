@@ -1,0 +1,26 @@
+<!DOCTYPE html>
+<html lang="en">
+	<head>
+		<meta charset="UTF-8" />
+		<title>Log In</title>
+		<script type="module">
+			const button = document.getElementsByTagName("button")[0];
+			button.addEventListener("click", (event) => {
+				window.open(
+					"https://scratch.mit.edu/scratch-addons-extension/feedback-login",
+					"_blank",
+					"popup"
+				);
+
+				window.addEventListener("message", async (event) => {
+					if (event.data?.message === "setCloud")
+						location.search = `?number=${event.data.number}`;
+				});
+			});
+		</script>
+	</head>
+
+	<body>
+		<button type="button">Log In</button>
+	</body>
+</html>

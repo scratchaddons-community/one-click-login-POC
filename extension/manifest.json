@@ -1,0 +1,19 @@
+{
+	"manifest_version": 3,
+	"name": "One Click Login POC",
+	"version": "1.0.0",
+	"content_scripts": [
+		{
+			"matches": [
+				"https://scratch.mit.edu/scratch-addons-extension/feedback-login"
+			],
+			"run_at": "document_start",
+			"js": ["index.js"],
+			"all_frames": true
+		}
+	],
+	"host_permissions": [
+		"https://scratch.mit.edu/*",
+		"https://clouddata.scratch.mit.edu/*"
+	]
+}

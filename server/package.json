@@ -1,0 +1,30 @@
+{
+	"name": "scratch-login-poc",
+	"private": true,
+	"repository": {
+		"type": "git",
+		"url": "https://github.com/RedGuy12/scratch-login-poc"
+	},
+	"license": "MIT",
+	"type": "module",
+	"main": "server.js",
+	"scripts": {
+		"format": "prettier --write \"../**\" --ignore-unknown",
+		"serve": "nodemon .",
+		"start": "node ."
+	},
+	"prettier": "@redguy12/prettier-config",
+	"dependencies": {
+		"dotenv": "^16.0.3",
+		"jose-node-esm-runtime": "^4.11.1"
+	},
+	"devDependencies": {
+		"@redguy12/prettier-config": "2.0.2",
+		"nodemon": "2.0.20",
+		"prettier": "2.8.0"
+	},
+	"engines": {
+		"node": "18.12.1",
+		"npm": "8.13.2"
+	}
+}
