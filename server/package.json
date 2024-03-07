@@ -16,7 +16,7 @@
 	"prettier": "@redguy12/prettier-config",
 	"dependencies": {
 		"dotenv": "^16.0.3",
-		"jose-node-esm-runtime": "^4.11.1"
+		"jose-node-esm-runtime": "^4.15.5"
 	},
 	"devDependencies": {
 		"@redguy12/prettier-config": "2.0.2",
